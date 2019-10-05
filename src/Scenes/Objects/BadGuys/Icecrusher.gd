@@ -53,8 +53,6 @@ func _on_Area2D_body_entered(body):
 		triggered = false
 		recovering = true
 
-
-
 func _on_recover_timer_timeout():
 	$recover_timer.stop()
 	recovering = true
