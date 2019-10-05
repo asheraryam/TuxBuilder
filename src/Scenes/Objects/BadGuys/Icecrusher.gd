@@ -4,14 +4,9 @@ var triggered = false
 var recovering = false
 
 onready var trigger_ray = get_node('trigger_ray')
-
-func _physics_process(delta):
-	pass
-
-func _squish(delta):
-	pass
 	
 func _process(delta):
+	
 	if triggered or recovering:
 		return
 
@@ -21,6 +16,7 @@ func _process(delta):
 		
 	
 func _move(delta):
+	
 	if not triggered and not recovering:
 		return
 	
