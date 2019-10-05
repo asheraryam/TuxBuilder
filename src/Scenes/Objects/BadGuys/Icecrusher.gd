@@ -40,7 +40,7 @@ func _move(delta):
 
 func _on_Area2D_body_entered(body):
 
-	if body.is_in_group('player'):
+	if body.is_in_group('player') and not body.dead:
 		body.hurt()
 		triggered = false
 		recovering = true
