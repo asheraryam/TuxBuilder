@@ -32,14 +32,15 @@ func _move(delta):
 	
 	if triggered:
 		velocity.y += 20
-	elif recovering:
-		velocity.y -= 8
+		velocity.y = move_and_slide(velocity, FLOOR).y
 
-	velocity.y = move_and_slide(velocity, FLOOR).y
+	elif recovering:
+		position.y -= 4
 
 	if recovering and position.y < startpos.y:
 		recovering = false
 		velocity.y = 0
+		velocity.y = move_and_slide(velocity, FLOOR).y
 
 func _on_Area2D_body_entered(body):
 
