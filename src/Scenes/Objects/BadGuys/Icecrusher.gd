@@ -35,7 +35,7 @@ func _move(delta):
 	elif recovering:
 		velocity.y -= 8
 
-	velocity = move_and_slide(velocity, FLOOR)
+	velocity.y = move_and_slide(velocity, FLOOR).y
 
 	if recovering and position.y < startpos.y:
 		recovering = false
