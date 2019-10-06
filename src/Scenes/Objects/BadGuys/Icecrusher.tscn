@@ -112,6 +112,7 @@ frames = SubResource( 3 )
 [node name="lefteye" type="Sprite" parent="Control"]
 position = Vector2( 1.01991, -1.1899 )
 texture = ExtResource( 3 )
+region_rect = Rect2( 100, 0, 0, 0 )
 
 [node name="righteye" type="Sprite" parent="Control"]
 texture = ExtResource( 4 )
@@ -134,7 +135,8 @@ anims/broken = SubResource( 5 )
 anims/shake = SubResource( 6 )
 
 [node name="trigger_ray" type="RayCast2D" parent="."]
-position = Vector2( -0.849926, 29.2802 )
+position = Vector2( 0, 29.28 )
+scale = Vector2( 22, 1 )
 enabled = true
 cast_to = Vector2( 0, 1000 )
 
