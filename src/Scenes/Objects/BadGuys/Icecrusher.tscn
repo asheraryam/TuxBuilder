@@ -110,11 +110,14 @@ position = Vector2( -0.198975, -0.445389 )
 frames = SubResource( 3 )
 
 [node name="lefteye" type="Sprite" parent="Control"]
-position = Vector2( 1.01991, -1.1899 )
+position = Vector2( -10.0926, -0.931554 )
+rotation = -1.5708
 texture = ExtResource( 3 )
 region_rect = Rect2( 100, 0, 0, 0 )
 
 [node name="righteye" type="Sprite" parent="Control"]
+position = Vector2( 12.7416, 0.370823 )
+rotation = 1.5708
 texture = ExtResource( 4 )
 
 [node name="Area2D" type="Area2D" parent="."]

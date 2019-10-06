@@ -17,6 +17,11 @@ func _process(delta):
 	
 func _move(delta):
 	
+	var player = UIHelpers.get_player()
+	if player != null:
+		$Control/lefteye.look_at(player.position)
+		$Control/righteye.look_at(player.position)
+	
 	if not triggered and not recovering:
 		return
 	
